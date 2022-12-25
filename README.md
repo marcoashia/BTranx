@@ -7,7 +7,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ### Try this code
-Enjoy this code and save time creating boilerplates on your next bookign application!
+Enjoy this code and save time creating boilerplates on your next booking application!
 
 ### Copy the code
 
