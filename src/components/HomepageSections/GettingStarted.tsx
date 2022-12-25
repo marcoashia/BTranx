@@ -11,19 +11,16 @@ import { TextUnderline } from '@/components/TextUnderline';
 
 const STEPS = [
   {
-    title: 'Find your template',
-    text:
-      'Every template is embedded within an iframe, so you can easily check what they look like and test the responsive behaviour.',
+    title: 'Enter your Destination',
+    text: 'Destination location and other details.',
   },
   {
-    title: 'Copy the code',
-    text:
-      'Click the code tab to see the actual source code of the template. Copy and paste it into your project and adjust it to your needs.',
+    title: 'Enter your Pick-up Details',
+    text: 'Location, date, and time of pick-up.',
   },
   {
-    title: 'Enjoy your free time',
-    text:
-      "You've just saved yourself a bunch of time not building the same stuff over and over again. Enjoy your free time, and build business features",
+    title: 'Submit & Get Instant Reply',
+    text: 'Click submit and get a price instantly.',
   },
 ];
 

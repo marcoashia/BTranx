@@ -31,7 +31,7 @@ export const SPLITBEE_TEMPLATE_MANUAL_COPY = 'template_copy_manual';
 /**
  * SEO constants
  */
-export const SEO_TITLE = 'Chakra Templates';
+export const SEO_TITLE = 'Booking Tranx';
 export const SEO_DESCRIPTION =
   'A growing open-source collection of hand-crafted Chakra UI templates ready to drop into your React project.';
 export const SEO_KEYWORDS =

@@ -51,40 +51,47 @@ export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
         as={Container}
         maxW={'7xl'}
         h={{ base: '100%', lg: '100vh' }}
-        minH={950}
+        minH={700}
         py={{ base: 24, lg: 32 }}
         spacing={{ base: 10, lg: 24 }}
         direction={{ base: 'column', lg: 'row' }}
         alignItems={'center'}>
         <Stack spacing={12} mb={{ base: 12, lg: 0 }} flex={2}>
           <Heading
-            as={'h2'}
+            as={'h3'}
+            fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '5xl' }}
+            maxW={'2xl'}>
+            <TextUnderline>Booking Rental</TextUnderline>
+            <TextUnderline>Transportation</TextUnderline>
+          </Heading>
+          <Heading
+            as={'h4'}
             fontSize={{ base: '3xl', sm: '4xl', md: '5xl', lg: '6xl' }}
             maxW={'2xl'}>
-            <TextUnderline>Production-ready</TextUnderline> Chakra UI Templates
-            for developers
+            Online Has Never Been This Easy!
           </Heading>
           <Stack spacing={5}>
             <Text color={'gray.500'} fontSize={{ md: 'lg' }} maxW={'2xl'}>
-              A growing collection of hand-crafted & responsive Chakra UI
-              templates ready to drop into your React project.
+              We understand the difficulty of finding the right rental
+              transportation for your needs, and we collaborate with rental
+              owners to develop solutions that benefit both parties!
             </Text>
             <Stack
               direction={{ base: 'column', sm: 'row' }}
               spacing={{ base: 6, sm: 12 }}>
               <Stack spacing={4}>
-                <Feature>Responsive Demos</Feature>
-                <Feature>Easy Customizable</Feature>
-                <Feature>Written in TypeScript</Feature>
+                <Feature>User Friendly UI</Feature>
+                <Feature>Instant Feedback</Feature>
+                <Feature>No Sign-up Needed</Feature>
               </Stack>
               <Stack spacing={4}>
-                <Feature>100% Open Source</Feature>
-                <Feature>{templatesCount} Templates</Feature>
-                <Feature>{categoriesCount} Categories</Feature>
+                <Feature>Easy Payment Methods</Feature>
+                <Feature>Fully Integrated</Feature>
+                <Feature>Realtime GPS Locator</Feature>
               </Stack>
             </Stack>
           </Stack>
-          <Stack direction={{ base: 'column', sm: 'row' }} spacing={8}>
+          {/* <Stack direction={{ base: 'column', sm: 'row' }} spacing={8}>
             <NextLink href={TEMPLATES_LINK} passHref>
               <Button
                 as={'a'}
@@ -117,7 +124,7 @@ export const Hero = ({ categoriesCount, templatesCount }: HeroProps) => {
               }}>
               Suggest Template
             </Button>
-          </Stack>
+          </Stack> */}
         </Stack>
 
         <HeroComponents />
