@@ -77,7 +77,7 @@ export const Header = () => {
                   as={'h1'}
                   fontSize={'xl'}
                   display={{ base: 'none', md: 'block' }}>
-                  <TextUnderline>Chakra</TextUnderline> Templates
+                  <TextUnderline>Booking</TextUnderline> Tranx
                 </Heading>
               </Stack>
             </Link>

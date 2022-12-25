@@ -13,24 +13,24 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: Array<NavItem> = [
+  // {
+  //   label: 'Templates',
+  //   children: data.map((category) => ({
+  //     label: category.name,
+  //     subLabel: category.subLabel,
+  //     href: `/${category.id}/${category.children?.[0].id}`,
+  //   })),
+  // },
   {
-    label: 'Templates',
-    children: data.map((category) => ({
-      label: category.name,
-      subLabel: category.subLabel,
-      href: `/${category.id}/${category.children?.[0].id}`,
-    })),
+    label: 'Book Now',
+    href: '',
   },
   {
-    label: 'Contribute',
-    href: CONTRIBUTE_LINK,
+    label: 'Link 1',
+    href: '',
   },
-  {
-    label: 'GitHub',
-    href: GITHUB_LINK,
-  },
-  {
-    label: 'Discord',
-    href: DISCORD_INVITE_LINK,
-  },
+  // {
+  //   label: 'Discord',
+  //   href: DISCORD_INVITE_LINK,
+  // },
 ];

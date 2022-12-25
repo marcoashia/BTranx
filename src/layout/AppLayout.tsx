@@ -12,7 +12,7 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
     <>
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

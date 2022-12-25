@@ -1,12 +1,12 @@
 {
-  "name": "chakra-templates",
+  "name": "BTranx",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hauptrolle/chakra-templates.git"
+    "url": ""
   },
-  "author": "Achim Rolle <achimrolle@googlemail.com>",
+  "author": "Duub Solutions",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

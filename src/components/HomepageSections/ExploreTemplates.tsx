@@ -30,13 +30,13 @@ export const ExploreTemplates = ({ templatesCount }: ExploreTemplatesProps) => {
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
             <Box>
               <Heading as={'h3'} mb={2}>
-                Explore {templatesCount - 1}+ production-ready Templates
+                Explore our growing numbers of transportion partners
               </Heading>
               <Text fontSize={'lg'}>
-                and start building beautiful websites & webapps today!
+                and start booking at the lowest price!!!
               </Text>
             </Box>
-            <Flex w={'full'} align={'center'} justify={'center'}>
+            {/* <Flex w={'full'} align={'center'} justify={'center'}>
               <NextLink href={TEMPLATES_LINK} passHref>
                 <Button
                   as={'a'}
@@ -53,7 +53,7 @@ export const ExploreTemplates = ({ templatesCount }: ExploreTemplatesProps) => {
                   Browse Templates
                 </Button>
               </NextLink>
-            </Flex>
+            </Flex> */}
           </SimpleGrid>
         </Box>
       </Container>

@@ -30,36 +30,31 @@ const Home: NextPage<PageProps> = ({
       <SEO />
       <Hero categoriesCount={categoriesCount} templatesCount={templatesCount} />
       <GettingStarted />
-      <OpenSource
-        contributors={contributors}
-        stargazers={stargazers}
-        categoriesCount={categoriesCount}
-        templatesCount={templatesCount}
-      />
-      <ExploreTemplates templatesCount={templatesCount!} />
+
+      <ExploreTemplates templatesCount={3} />
       {/*<DiscordBanner />*/}
     </AppLayout>
   );
 };
 
-export const getStaticProps: GetStaticProps<PageProps> = async () => {
-  // Get contributors from .all-contributorsrc
-  const contributorsRcPath = path.resolve('.all-contributorsrc');
-  const { contributors } = JSON.parse(
-    fs.readFileSync(contributorsRcPath, 'utf-8')
-  );
+// export const getStaticProps: GetStaticProps<PageProps> = async () => {
+//   // Get contributors from .all-contributorsrc
+//   const contributorsRcPath = path.resolve('.all-contributorsrc');
+//   const { contributors } = JSON.parse(
+//     fs.readFileSync(contributorsRcPath, 'utf-8')
+//   );
 
-  // Get stargazers from GitHub API
-  const stargazers = await fetchStargazers();
+//   // Get stargazers from GitHub API
+//   const stargazers = await fetchStargazers();
 
-  // Counts
-  const templatesCount = getTemplatesCount(data);
-  const categoriesCount = getCategoriesCount(data);
+//   // Counts
+//   const templatesCount = getTemplatesCount(data);
+//   const categoriesCount = getCategoriesCount(data);
 
-  return {
-    props: { contributors, stargazers, categoriesCount, templatesCount },
-    revalidate: 3600,
-  };
-};
+//   return {
+//     props: { contributors, stargazers, categoriesCount, templatesCount },
+//     revalidate: 3600,
+//   };
+// };
 
 export default Home;
