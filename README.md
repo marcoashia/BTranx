@@ -3,13 +3,11 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-### Find your template
-
-Every template is embedded within an iframe on the page, so you can easily check what they look like and test the responsive behaviour.
+### Try this code
+Enjoy this code and save time creating boilerplates on your next booking application!
 
 ### Copy the code
 
