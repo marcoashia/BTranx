@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import type { AppProps } from 'next/app';
 import Router from 'next/router';
 import Head from 'next/head';
@@ -24,10 +24,19 @@ function App({ Component, pageProps, router }: AppProps) {
     if (!inIframe()) {
       splitbee.init();
     }
-
     // Necessary because otherwise 100% body height will break the template preview
     document.body.classList.add(isTemplate ? 'template' : 'body');
   }, []);
+
+  const [showChild, setShowChild] = useState(false);
+
+  useEffect(() => {
+    setShowChild(true);
+  }, []);
+
+  if (!showChild) {
+    return null;
+  }
 
   return (
     <ChakraProvider theme={theme}>
